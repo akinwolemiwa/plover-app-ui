@@ -12,6 +12,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   flutter_screenutil: ^5.0.0+2
+  flutter_svg: ^1.1.6
+  smooth_page_indicator: ^1.0.0+2
 
 dev_dependencies:
   flutter_test:
@@ -31,6 +33,7 @@ flutter:
 
   assets:
     - assets/png/
+    - assets/svg/
     - assets/
 
   fonts:
