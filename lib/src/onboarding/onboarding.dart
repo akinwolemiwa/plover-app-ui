@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:plover/src/auth/signup.dart';
 import 'package:plover/src/constants/assets.dart';
 import 'package:plover/src/theme/color.dart';
 import 'package:plover/src/theme/text.dart';
@@ -194,17 +195,27 @@ class _OnboardingState extends State<Onboarding> {
 
   Widget get _loginOptions => Column(
         children: [
-          Container(
-            height: 59.h,
-            width: 343.w,
-            decoration: BoxDecoration(
-                color: MyColors.mainGreen,
-                borderRadius: BorderRadius.circular(0)),
-            child: Align(
-              alignment: Alignment.center,
-              child: Text(
-                'Get Started',
-                style: textTheme.subtitle1!.copyWith(color: Colors.white),
+          GestureDetector(
+            onTap: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const SignUp(),
+                ),
+              );
+            },
+            child: Container(
+              height: 59.h,
+              width: 343.w,
+              decoration: BoxDecoration(
+                  color: MyColors.mainGreen,
+                  borderRadius: BorderRadius.circular(0)),
+              child: Align(
+                alignment: Alignment.center,
+                child: Text(
+                  'Get Started',
+                  style: textTheme.subtitle1!.copyWith(color: Colors.white),
+                ),
               ),
             ),
           ),
