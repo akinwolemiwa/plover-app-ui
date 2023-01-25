@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:plover/src/auth/login.dart';
 import 'package:plover/src/theme/color.dart';
 import 'package:plover/src/theme/text.dart';
 
@@ -321,25 +322,35 @@ class _SignUpState extends State<SignUp> {
             SizedBox(
               height: 8.h,
             ),
-            Align(
-              alignment: Alignment.center,
-              child: RichText(
-                text: TextSpan(
-                  children: <TextSpan>[
-                    TextSpan(
-                      text: 'Already have an account? ',
-                      style: textTheme.subtitle2!.copyWith(
-                        color: Colors.black.withOpacity(0.5),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Login(),
+                  ),
+                );
+              },
+              child: Align(
+                alignment: Alignment.center,
+                child: RichText(
+                  text: TextSpan(
+                    children: <TextSpan>[
+                      TextSpan(
+                        text: 'Already have an account? ',
+                        style: textTheme.subtitle2!.copyWith(
+                          color: Colors.black.withOpacity(0.5),
+                        ),
                       ),
-                    ),
-                    TextSpan(
-                      text: 'Log in',
-                      style: textTheme.subtitle2!.copyWith(
-                        color: MyColors.lighterGreen,
-                        decoration: TextDecoration.underline,
+                      TextSpan(
+                        text: 'Log in',
+                        style: textTheme.subtitle2!.copyWith(
+                          color: MyColors.lighterGreen,
+                          decoration: TextDecoration.underline,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),
