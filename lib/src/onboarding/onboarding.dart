@@ -223,9 +223,7 @@ class _OnboardingState extends State<Onboarding> {
         ],
       );
 
-  Widget _slide(String title, String subtitle, String image,
-          [double padding = 0.0]) =>
-      Column(
+  Widget _slide(String title, String subtitle, String image) => Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(image),
