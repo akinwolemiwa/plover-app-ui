@@ -55,3 +55,7 @@ flutter:
           weight: 500
         - asset: assets/fonts/Metropolis-Light.otf #for Avenir Light
           weight: 400
+
+    - family: CustomIcons
+      fonts:
+        - asset: fonts/CustomIcons.ttf #Custom Icons

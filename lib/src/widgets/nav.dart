@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
+import 'package:plover/custom_icons_icons.dart';
 import 'package:plover/src/home/homepage.dart';
 import 'package:plover/src/theme/color.dart';
 import 'package:plover/src/theme/text.dart';
@@ -27,7 +28,7 @@ class _BottomNavWidgetState extends State<BottomNavWidget> {
     return [
       PersistentBottomNavBarItem(
         icon: const Icon(
-          Icons.abc,
+          CustomIcons.home,
           size: 24,
         ),
         title: ("Home"),
@@ -37,7 +38,7 @@ class _BottomNavWidgetState extends State<BottomNavWidget> {
       ),
       PersistentBottomNavBarItem(
         icon: const Icon(
-          Icons.abc,
+          CustomIcons.policy,
           size: 24,
         ),
         title: ("Claims"),
@@ -47,7 +48,7 @@ class _BottomNavWidgetState extends State<BottomNavWidget> {
       ),
       PersistentBottomNavBarItem(
         icon: const Icon(
-          Icons.abc,
+          CustomIcons.insurance,
           size: 24,
         ),
         title: ("Issues"),
@@ -57,7 +58,7 @@ class _BottomNavWidgetState extends State<BottomNavWidget> {
       ),
       PersistentBottomNavBarItem(
         icon: const Icon(
-          Icons.abc,
+          CustomIcons.settings,
           size: 24,
         ),
         title: ("Settings"),
