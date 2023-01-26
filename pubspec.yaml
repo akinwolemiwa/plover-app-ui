@@ -13,6 +13,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_screenutil: ^5.0.0+2
   flutter_svg: ^1.1.6
+  persistent_bottom_nav_bar: ^5.0.2
   smooth_page_indicator: ^1.0.0+2
 
 dev_dependencies:
