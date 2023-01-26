@@ -5,6 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:plover/src/auth/signup.dart';
 import 'package:plover/src/constants/assets.dart';
+import 'package:plover/src/constants/string.dart';
 import 'package:plover/src/theme/color.dart';
 import 'package:plover/src/theme/text.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -43,18 +44,18 @@ class _OnboardingState extends State<Onboarding> {
 
   List<Widget> get _slides => <Widget>[
         _slide(
-          'Insure your equipments\nin one click!',
-          'Lorem ipsum dolor sit amet, consectetur\nadipiscing elit. Tincidunt pellentesque magna\na, velit.',
+          onboarding1Head,
+          onboardingLorem,
           onboardingOne,
         ),
         _slide(
-          'You\'ll get all the protection you need!',
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt pellentesque magna a, velit.',
+          onboarding2Head,
+          onboardingLorem,
           onboardingTwo,
         ),
         _slide(
-          'We\'ll always be there to guide you',
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt pellentesque magna a, velit.',
+          onboarding3Head,
+          onboardingLorem,
           onboardingThree,
         ),
       ];
@@ -70,7 +71,7 @@ class _OnboardingState extends State<Onboarding> {
               : Align(
                   alignment: Alignment.bottomRight,
                   child: SvgPicture.asset(
-                    'assets/svg/shape.svg',
+                    onboardingShape,
                   ),
                 ),
           Padding(
@@ -172,7 +173,7 @@ class _OnboardingState extends State<Onboarding> {
                                                 TextStyle(color: Colors.white),
                                           ),
                                           SvgPicture.asset(
-                                            'assets/svg/arrow.svg',
+                                            arrow,
                                             color: Colors.white,
                                           ),
                                         ],
