@@ -15,7 +15,7 @@ class BottomNavWidget extends StatefulWidget {
 class _BottomNavWidgetState extends State<BottomNavWidget> {
   final PersistentTabController _controller =
       PersistentTabController(initialIndex: 0);
-  List<Widget> _NavScreens() {
+  List<Widget> _navScreens() {
     return [
       const HomePage(),
       const SizedBox(),
@@ -74,7 +74,7 @@ class _BottomNavWidgetState extends State<BottomNavWidget> {
     return Center(
       child: PersistentTabView(
         context,
-        screens: _NavScreens(),
+        screens: _navScreens(),
         items: _navBarsItems(),
         controller: _controller,
         backgroundColor: Colors.white,
