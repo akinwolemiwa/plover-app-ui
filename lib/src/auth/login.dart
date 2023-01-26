@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:plover/src/home/homepage.dart';
 import 'package:plover/src/theme/color.dart';
 import 'package:plover/src/theme/text.dart';
 
@@ -161,17 +162,27 @@ class _LoginState extends State<Login> {
             SizedBox(
               height: 64.h,
             ),
-            Container(
-              height: 59.h,
-              width: 343.w,
-              decoration: BoxDecoration(
-                  color: MyColors.mainGreen,
-                  borderRadius: BorderRadius.circular(0)),
-              child: Align(
-                alignment: Alignment.center,
-                child: Text(
-                  'Login',
-                  style: textTheme.subtitle1!.copyWith(color: Colors.white),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const HomePage(),
+                  ),
+                );
+              },
+              child: Container(
+                height: 59.h,
+                width: 343.w,
+                decoration: BoxDecoration(
+                    color: MyColors.mainGreen,
+                    borderRadius: BorderRadius.circular(0)),
+                child: Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                    'Login',
+                    style: textTheme.subtitle1!.copyWith(color: Colors.white),
+                  ),
                 ),
               ),
             ),
