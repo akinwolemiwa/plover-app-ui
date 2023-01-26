@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:plover/src/home/homepage.dart';
 import 'package:plover/src/theme/color.dart';
 import 'package:plover/src/theme/text.dart';
+import 'package:plover/src/widgets/nav.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -12,16 +12,6 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
-  bool _isChecked = false;
-
-  void _onChecked(bool? newValue) {
-    if (newValue != null) {
-      setState(() {
-        _isChecked = newValue;
-      });
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -167,7 +157,7 @@ class _LoginState extends State<Login> {
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const HomePage(),
+                    builder: (context) => const BottomNavWidget(),
                   ),
                 );
               },
