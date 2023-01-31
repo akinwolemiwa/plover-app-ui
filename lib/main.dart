@@ -20,16 +20,24 @@ class MyApp extends StatelessWidget {
       DeviceOrientation.portraitUp,
       DeviceOrientation.portraitDown,
     ]);
-    return ScreenUtilInit(
-      designSize: const Size(375, 812),
-      minTextAdapt: true,
-      splitScreenMode: true,
-      builder: (context, child) => MaterialApp(
-          title: appName,
-          theme: ThemeData(
-            primarySwatch: Colors.blue,
-          ),
-          home: const SplashScreen()),
+    return Listener(
+      onPointerDown: (_) {
+        final FocusScopeNode currentScope = FocusScope.of(context);
+        if (!currentScope.hasPrimaryFocus && currentScope.hasFocus) {
+          FocusManager.instance.primaryFocus!.unfocus();
+        }
+      },
+      child: ScreenUtilInit(
+        designSize: const Size(375, 812),
+        minTextAdapt: true,
+        splitScreenMode: true,
+        builder: (context, child) => MaterialApp(
+            title: appName,
+            theme: ThemeData(
+              primarySwatch: Colors.blue,
+            ),
+            home: const SplashScreen()),
+      ),
     );
   }
 }
