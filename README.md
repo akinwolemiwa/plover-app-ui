@@ -1,6 +1,6 @@
-# plover
+# Plover
 
-A new Flutter project.
+A flutter project for the Plover app UI
 
 ## Getting Started
 
