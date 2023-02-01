@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
+import 'package:persistent_bottom_nav_bar_v2/persistent-tab-view.dart';
 import 'package:plover/custom_icons_icons.dart';
 import 'package:plover/src/home/homepage.dart';
 import 'package:plover/src/theme/color.dart';

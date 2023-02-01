@@ -69,65 +69,68 @@ class HomePage extends StatelessWidget {
               SizedBox(
                 height: 8.h,
               ),
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.circular(3),
-                ),
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          left: 19, right: 16, top: 19, bottom: 19),
-                      child: SvgPicture.asset(
-                        'assets/svg/tap.svg',
-                        height: 32.h,
-                        width: 32.w,
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 19, 0, 19),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Discover what\nfits your needs',
-                            style: textTheme.headline2!.copyWith(
-                              color: Colors.white,
-                            ),
-                          ),
-                          SizedBox(
-                            height: 5.h,
-                          ),
-                          Text(
-                            'Tap here to discover the plan that\nbest suits you.',
-                            style: textTheme.subtitle2!.copyWith(
-                              color: Colors.white,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 91.738),
-                      child: Container(
-                        decoration: const BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(20),
-                            bottomLeft: Radius.circular(20),
-                          ),
-                        ),
-                        child: const Padding(
-                          padding: EdgeInsets.all(5),
-                          child: Icon(
-                            Icons.keyboard_arrow_right,
-                            color: Colors.black,
-                          ),
+              GestureDetector(
+                onTap: () {},
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(3),
+                  ),
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(
+                            left: 19, right: 16, top: 19, bottom: 19),
+                        child: SvgPicture.asset(
+                          'assets/svg/tap.svg',
+                          height: 32.h,
+                          width: 32.w,
                         ),
                       ),
-                    ),
-                  ],
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 19, 0, 19),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Discover what\nfits your needs',
+                              style: textTheme.headline2!.copyWith(
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 5.h,
+                            ),
+                            Text(
+                              'Tap here to discover the plan that\nbest suits you.',
+                              style: textTheme.subtitle2!.copyWith(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 91.738),
+                        child: Container(
+                          decoration: const BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(20),
+                              bottomLeft: Radius.circular(20),
+                            ),
+                          ),
+                          child: const Padding(
+                            padding: EdgeInsets.all(5),
+                            child: Icon(
+                              Icons.keyboard_arrow_right,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
               SizedBox(
