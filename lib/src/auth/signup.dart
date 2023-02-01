@@ -305,17 +305,27 @@ class _SignUpState extends State<SignUp> {
             SizedBox(
               height: 32.h,
             ),
-            Container(
-              height: 59.h,
-              width: 343.w,
-              decoration: BoxDecoration(
-                  color: MyColors.mainGreen,
-                  borderRadius: BorderRadius.circular(0)),
-              child: Align(
-                alignment: Alignment.center,
-                child: Text(
-                  'Sign up',
-                  style: textTheme.subtitle1!.copyWith(color: Colors.white),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Login(),
+                  ),
+                );
+              },
+              child: Container(
+                height: 59.h,
+                width: 343.w,
+                decoration: BoxDecoration(
+                    color: MyColors.mainGreen,
+                    borderRadius: BorderRadius.circular(0)),
+                child: Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                    'Sign up',
+                    style: textTheme.subtitle1!.copyWith(color: Colors.white),
+                  ),
                 ),
               ),
             ),
