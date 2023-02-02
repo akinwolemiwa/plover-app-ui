@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:persistent_bottom_nav_bar_v2/persistent-tab-view.dart';
+import 'package:plover/src/home/plans.dart';
 import 'package:plover/src/theme/color.dart';
 import 'package:plover/src/theme/text.dart';
 
@@ -70,7 +72,13 @@ class HomePage extends StatelessWidget {
                 height: 8.h,
               ),
               GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  pushNewScreen(
+                    context,
+                    withNavBar: true,
+                    screen: const PlansPage(),
+                  );
+                },
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.black,
