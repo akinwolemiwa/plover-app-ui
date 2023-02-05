@@ -1,5 +1,3 @@
-import 'package:plover/src/onboarding/onboarding.dart';
-
 const appName = 'Plover';
 
 //ONBOARDING

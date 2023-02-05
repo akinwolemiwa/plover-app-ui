@@ -32,14 +32,14 @@ class HomePage extends StatelessWidget {
                           children: <TextSpan>[
                             TextSpan(
                               text: 'Hello ',
-                              style: textTheme.bodyText1!.copyWith(
+                              style: textTheme.bodyLarge!.copyWith(
                                   color: Colors.black,
                                   fontWeight: FontWeight.w500,
                                   fontSize: 15),
                             ),
                             TextSpan(
                               text: 'Adetuba.',
-                              style: textTheme.bodyText1!.copyWith(
+                              style: textTheme.bodyLarge!.copyWith(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w700,
                                 fontSize: 15,
@@ -53,7 +53,7 @@ class HomePage extends StatelessWidget {
                       ),
                       Text(
                         'Happy to have you on board! Let\'s start by finding\nout which insurance fits you best.',
-                        style: textTheme.subtitle1!.copyWith(
+                        style: textTheme.titleMedium!.copyWith(
                           color: Colors.black.withOpacity(0.5),
                           fontWeight: FontWeight.w500,
                           fontSize: 12,
@@ -102,7 +102,7 @@ class HomePage extends StatelessWidget {
                           children: [
                             Text(
                               'Discover what\nfits your needs',
-                              style: textTheme.headline2!.copyWith(
+                              style: textTheme.displayMedium!.copyWith(
                                 color: Colors.white,
                               ),
                             ),
@@ -111,7 +111,7 @@ class HomePage extends StatelessWidget {
                             ),
                             Text(
                               'Tap here to discover the plan that\nbest suits you.',
-                              style: textTheme.subtitle2!.copyWith(
+                              style: textTheme.titleSmall!.copyWith(
                                 color: Colors.white,
                               ),
                             ),
@@ -146,7 +146,7 @@ class HomePage extends StatelessWidget {
               ),
               Text(
                 'Quick Actions',
-                style: textTheme.bodyText1!.copyWith(
+                style: textTheme.bodyLarge!.copyWith(
                   fontWeight: FontWeight.w700,
                 ),
               ),
@@ -187,7 +187,7 @@ class HomePage extends StatelessWidget {
                           ),
                           Text(
                             'Insure a new equipment',
-                            style: textTheme.subtitle1!.copyWith(
+                            style: textTheme.titleMedium!.copyWith(
                               fontWeight: FontWeight.w700,
                             ),
                           ),
@@ -196,7 +196,7 @@ class HomePage extends StatelessWidget {
                           ),
                           Text(
                             'Have a new equipment? Insure it now.',
-                            style: textTheme.subtitle2!.copyWith(
+                            style: textTheme.titleSmall!.copyWith(
                               fontWeight: FontWeight.w400,
                               color: Colors.black.withOpacity(0.5),
                             ),
@@ -244,7 +244,7 @@ class HomePage extends StatelessWidget {
                           ),
                           Text(
                             'Report a claim',
-                            style: textTheme.subtitle1!.copyWith(
+                            style: textTheme.titleMedium!.copyWith(
                               fontWeight: FontWeight.w700,
                             ),
                           ),
@@ -253,7 +253,7 @@ class HomePage extends StatelessWidget {
                           ),
                           Text(
                             'Can’t find your equipment? Submit a claim for processing.',
-                            style: textTheme.subtitle2!.copyWith(
+                            style: textTheme.titleSmall!.copyWith(
                               fontWeight: FontWeight.w400,
                               color: Colors.black.withOpacity(0.5),
                             ),
@@ -273,13 +273,13 @@ class HomePage extends StatelessWidget {
                 children: [
                   Text(
                     'Recent Issues',
-                    style: textTheme.bodyText1!.copyWith(
+                    style: textTheme.bodyLarge!.copyWith(
                       fontWeight: FontWeight.w700,
                     ),
                   ),
                   Text(
                     'see all',
-                    style: textTheme.bodyText1!.copyWith(
+                    style: textTheme.bodyLarge!.copyWith(
                       fontWeight: FontWeight.w600,
                       fontSize: 8.sp,
                     ),
@@ -319,7 +319,7 @@ class HomePage extends StatelessWidget {
                           ),
                           Text(
                             'Canon camera 450',
-                            style: textTheme.subtitle1!.copyWith(
+                            style: textTheme.titleMedium!.copyWith(
                               fontWeight: FontWeight.w500,
                             ),
                           ),
@@ -366,7 +366,7 @@ class HomePage extends StatelessWidget {
                           ),
                           Text(
                             'Vending Machine',
-                            style: textTheme.subtitle1!.copyWith(
+                            style: textTheme.titleMedium!.copyWith(
                               fontWeight: FontWeight.w500,
                             ),
                           ),

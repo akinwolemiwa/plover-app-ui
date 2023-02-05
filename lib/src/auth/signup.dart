@@ -37,7 +37,7 @@ class _SignUpState extends State<SignUp> {
               alignment: Alignment.center,
               child: Text(
                 'Create an Account',
-                style: textTheme.subtitle1!.copyWith(
+                style: textTheme.titleMedium!.copyWith(
                   fontWeight: FontWeight.w400,
                 ),
               ),
@@ -49,7 +49,7 @@ class _SignUpState extends State<SignUp> {
               alignment: Alignment.center,
               child: Text(
                 'Let\'s begin this Journey!',
-                style: textTheme.bodyText1!.copyWith(
+                style: textTheme.bodyLarge!.copyWith(
                   fontWeight: FontWeight.w600,
                 ),
               ),
@@ -65,7 +65,7 @@ class _SignUpState extends State<SignUp> {
                   children: [
                     Text(
                       'First Name',
-                      style: textTheme.subtitle1!.copyWith(
+                      style: textTheme.titleMedium!.copyWith(
                         fontWeight: FontWeight.w400,
                       ),
                     ),
@@ -77,7 +77,7 @@ class _SignUpState extends State<SignUp> {
                       child: TextFormField(
                         decoration: InputDecoration(
                           hintText: 'Enter first name',
-                          hintStyle: textTheme.subtitle2!.copyWith(
+                          hintStyle: textTheme.titleSmall!.copyWith(
                             color: Colors.black.withOpacity(0.5),
                           ),
                           border: const OutlineInputBorder(
@@ -108,7 +108,7 @@ class _SignUpState extends State<SignUp> {
                   children: [
                     Text(
                       'Last Name',
-                      style: textTheme.subtitle1!.copyWith(
+                      style: textTheme.titleMedium!.copyWith(
                         fontWeight: FontWeight.w400,
                       ),
                     ),
@@ -120,7 +120,7 @@ class _SignUpState extends State<SignUp> {
                       child: TextFormField(
                         decoration: InputDecoration(
                           hintText: 'Enter last name',
-                          hintStyle: textTheme.subtitle2!.copyWith(
+                          hintStyle: textTheme.titleSmall!.copyWith(
                             color: Colors.black.withOpacity(0.5),
                           ),
                           border: const OutlineInputBorder(
@@ -156,7 +156,7 @@ class _SignUpState extends State<SignUp> {
               children: [
                 Text(
                   'Email Address',
-                  style: textTheme.subtitle1!.copyWith(
+                  style: textTheme.titleMedium!.copyWith(
                     fontWeight: FontWeight.w400,
                   ),
                 ),
@@ -168,7 +168,7 @@ class _SignUpState extends State<SignUp> {
                   child: TextFormField(
                     decoration: InputDecoration(
                       hintText: 'Enter email address',
-                      hintStyle: textTheme.subtitle2!.copyWith(
+                      hintStyle: textTheme.titleSmall!.copyWith(
                         color: Colors.black.withOpacity(0.5),
                       ),
                       border: const OutlineInputBorder(
@@ -202,7 +202,7 @@ class _SignUpState extends State<SignUp> {
               children: [
                 Text(
                   'Password',
-                  style: textTheme.subtitle1!.copyWith(
+                  style: textTheme.titleMedium!.copyWith(
                     fontWeight: FontWeight.w400,
                   ),
                 ),
@@ -214,7 +214,7 @@ class _SignUpState extends State<SignUp> {
                   child: TextFormField(
                     decoration: InputDecoration(
                       hintText: 'Enter password',
-                      hintStyle: textTheme.subtitle2!.copyWith(
+                      hintStyle: textTheme.titleSmall!.copyWith(
                         color: Colors.black.withOpacity(0.5),
                       ),
                       border: const OutlineInputBorder(
@@ -272,26 +272,26 @@ class _SignUpState extends State<SignUp> {
                       children: <TextSpan>[
                         TextSpan(
                           text: 'By creating an account, you agree to our ',
-                          style: textTheme.subtitle2!.copyWith(
+                          style: textTheme.titleSmall!.copyWith(
                             color: Colors.black.withOpacity(0.5),
                           ),
                         ),
                         TextSpan(
                           text: 'Terms of Use ',
-                          style: textTheme.subtitle2!.copyWith(
+                          style: textTheme.titleSmall!.copyWith(
                             color: MyColors.lighterGreen,
                             decoration: TextDecoration.underline,
                           ),
                         ),
                         TextSpan(
                           text: 'and ',
-                          style: textTheme.subtitle2!.copyWith(
+                          style: textTheme.titleSmall!.copyWith(
                             color: Colors.black.withOpacity(0.5),
                           ),
                         ),
                         TextSpan(
                           text: 'Privacy Policy',
-                          style: textTheme.subtitle2!.copyWith(
+                          style: textTheme.titleSmall!.copyWith(
                             color: MyColors.lighterGreen,
                             decoration: TextDecoration.underline,
                           ),
@@ -324,7 +324,7 @@ class _SignUpState extends State<SignUp> {
                   alignment: Alignment.center,
                   child: Text(
                     'Sign up',
-                    style: textTheme.subtitle1!.copyWith(color: Colors.white),
+                    style: textTheme.titleMedium!.copyWith(color: Colors.white),
                   ),
                 ),
               ),
@@ -348,13 +348,13 @@ class _SignUpState extends State<SignUp> {
                     children: <TextSpan>[
                       TextSpan(
                         text: 'Already have an account? ',
-                        style: textTheme.subtitle2!.copyWith(
+                        style: textTheme.titleSmall!.copyWith(
                           color: Colors.black.withOpacity(0.5),
                         ),
                       ),
                       TextSpan(
                         text: 'Log in',
-                        style: textTheme.subtitle2!.copyWith(
+                        style: textTheme.titleSmall!.copyWith(
                           color: MyColors.lighterGreen,
                           decoration: TextDecoration.underline,
                         ),

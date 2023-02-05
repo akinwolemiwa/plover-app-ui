@@ -4,12 +4,12 @@ import 'package:plover/src/theme/font.dart';
 
 ThemeData themeData = ThemeData(
     textTheme: TextTheme(
-  headline1: _style2(size: 26.sp, weight: FontWeight.w600),
-  headline2: _style1(size: 20.sp, weight: FontWeight.w800),
-  bodyText1: _style2(size: 16.sp, weight: FontWeight.w500),
-  bodyText2: _style1(size: 14.sp, weight: FontWeight.w400),
-  subtitle1: _style2(size: 12.sp, weight: FontWeight.w600),
-  subtitle2: _style1(size: 10.sp, weight: FontWeight.w400),
+  displayLarge: _style2(size: 26.sp, weight: FontWeight.w600),
+  displayMedium: _style1(size: 20.sp, weight: FontWeight.w800),
+  bodyLarge: _style2(size: 16.sp, weight: FontWeight.w500),
+  bodyMedium: _style1(size: 14.sp, weight: FontWeight.w400),
+  titleMedium: _style2(size: 12.sp, weight: FontWeight.w600),
+  titleSmall: _style1(size: 10.sp, weight: FontWeight.w400),
 ));
 
 TextStyle _style1({

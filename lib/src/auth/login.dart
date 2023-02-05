@@ -27,7 +27,7 @@ class _LoginState extends State<Login> {
               alignment: Alignment.center,
               child: Text(
                 'Login',
-                style: textTheme.subtitle1!.copyWith(
+                style: textTheme.titleMedium!.copyWith(
                   fontWeight: FontWeight.w400,
                 ),
               ),
@@ -39,7 +39,7 @@ class _LoginState extends State<Login> {
               alignment: Alignment.center,
               child: Text(
                 'Hello! Welcome back',
-                style: textTheme.bodyText1!.copyWith(
+                style: textTheme.bodyLarge!.copyWith(
                   fontWeight: FontWeight.w600,
                 ),
               ),
@@ -52,7 +52,7 @@ class _LoginState extends State<Login> {
               children: [
                 Text(
                   'Email Address',
-                  style: textTheme.subtitle1!.copyWith(
+                  style: textTheme.titleMedium!.copyWith(
                     fontWeight: FontWeight.w400,
                   ),
                 ),
@@ -64,7 +64,7 @@ class _LoginState extends State<Login> {
                   child: TextFormField(
                     decoration: InputDecoration(
                       hintText: 'Enter email address',
-                      hintStyle: textTheme.subtitle2!.copyWith(
+                      hintStyle: textTheme.titleSmall!.copyWith(
                         color: Colors.black.withOpacity(0.5),
                       ),
                       border: const OutlineInputBorder(
@@ -98,7 +98,7 @@ class _LoginState extends State<Login> {
               children: [
                 Text(
                   'Password',
-                  style: textTheme.subtitle1!.copyWith(
+                  style: textTheme.titleMedium!.copyWith(
                     fontWeight: FontWeight.w400,
                   ),
                 ),
@@ -110,7 +110,7 @@ class _LoginState extends State<Login> {
                   child: TextFormField(
                     decoration: InputDecoration(
                       hintText: 'Enter password',
-                      hintStyle: textTheme.subtitle2!.copyWith(
+                      hintStyle: textTheme.titleSmall!.copyWith(
                         color: Colors.black.withOpacity(0.5),
                       ),
                       border: const OutlineInputBorder(
@@ -143,7 +143,7 @@ class _LoginState extends State<Login> {
               alignment: Alignment.centerRight,
               child: Text(
                 'forgot password',
-                style: textTheme.subtitle2!.copyWith(
+                style: textTheme.titleSmall!.copyWith(
                   color: MyColors.lighterGreen,
                   decoration: TextDecoration.underline,
                 ),
@@ -171,7 +171,7 @@ class _LoginState extends State<Login> {
                   alignment: Alignment.center,
                   child: Text(
                     'Login',
-                    style: textTheme.subtitle1!.copyWith(color: Colors.white),
+                    style: textTheme.titleMedium!.copyWith(color: Colors.white),
                   ),
                 ),
               ),
@@ -190,13 +190,13 @@ class _LoginState extends State<Login> {
                     children: <TextSpan>[
                       TextSpan(
                         text: 'Don\'t have an account? ',
-                        style: textTheme.subtitle2!.copyWith(
+                        style: textTheme.titleSmall!.copyWith(
                           color: Colors.black.withOpacity(0.5),
                         ),
                       ),
                       TextSpan(
                         text: 'Sign up',
-                        style: textTheme.subtitle2!.copyWith(
+                        style: textTheme.titleSmall!.copyWith(
                           color: MyColors.lighterGreen,
                           decoration: TextDecoration.underline,
                         ),

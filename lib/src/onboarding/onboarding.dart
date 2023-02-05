@@ -87,7 +87,7 @@ class _OnboardingState extends State<Onboarding> {
                     alignment: Alignment.topRight,
                     child: Text(
                       'Skip',
-                      style: textTheme.subtitle1!
+                      style: textTheme.titleMedium!
                           .copyWith(fontWeight: FontWeight.w300),
                     ),
                   ),
@@ -215,7 +215,7 @@ class _OnboardingState extends State<Onboarding> {
                 alignment: Alignment.center,
                 child: Text(
                   'Get Started',
-                  style: textTheme.subtitle1!.copyWith(color: Colors.white),
+                  style: textTheme.titleMedium!.copyWith(color: Colors.white),
                 ),
               ),
             ),
@@ -232,7 +232,7 @@ class _OnboardingState extends State<Onboarding> {
           Text(
             title,
             textAlign: TextAlign.center,
-            style: textTheme.headline1!.copyWith(
+            style: textTheme.displayLarge!.copyWith(
               height: 1.2,
             ),
           ),
@@ -242,7 +242,7 @@ class _OnboardingState extends State<Onboarding> {
           Text(
             subtitle,
             textAlign: TextAlign.center,
-            style: textTheme.bodyText1!.copyWith(
+            style: textTheme.bodyLarge!.copyWith(
               height: 1.2,
               fontWeight: FontWeight.w500,
               fontSize: 16,

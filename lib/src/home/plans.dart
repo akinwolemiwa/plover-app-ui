@@ -14,7 +14,7 @@ class PlansPage extends StatelessWidget {
         centerTitle: true,
         title: Text(
           'Plans',
-          style: textTheme.bodyText1!.copyWith(
+          style: textTheme.bodyLarge!.copyWith(
             color: Colors.white,
             fontWeight: FontWeight.w600,
           ),
@@ -34,18 +34,18 @@ class PlansPage extends StatelessWidget {
                   children: [
                     Text(
                       'Basic Plan',
-                      style: textTheme.headline2!.copyWith(),
+                      style: textTheme.displayMedium!.copyWith(),
                     ),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           '\$20',
-                          style: textTheme.headline2!.copyWith(),
+                          style: textTheme.displayMedium!.copyWith(),
                         ),
                         Text(
                           '/mo',
-                          style: textTheme.headline2!.copyWith(
+                          style: textTheme.displayMedium!.copyWith(
                             fontSize: 12,
                           ),
                         ),
@@ -53,7 +53,6 @@ class PlansPage extends StatelessWidget {
                     ),
                   ],
                 ),
-                
                 Row(
                   children: [
                     const Padding(
@@ -65,7 +64,7 @@ class PlansPage extends StatelessWidget {
                     ),
                     Text(
                       'Basic insurance',
-                      style: textTheme.subtitle1!.copyWith(
+                      style: textTheme.titleMedium!.copyWith(
                         fontWeight: FontWeight.w400,
                         color: Colors.black.withOpacity(0.5),
                       ),
@@ -86,7 +85,7 @@ class PlansPage extends StatelessWidget {
                     ),
                     Text(
                       'Two equipments insurance',
-                      style: textTheme.subtitle1!.copyWith(
+                      style: textTheme.titleMedium!.copyWith(
                         fontWeight: FontWeight.w400,
                         color: Colors.black.withOpacity(0.5),
                       ),
@@ -107,7 +106,7 @@ class PlansPage extends StatelessWidget {
                     ),
                     Text(
                       'Up to 4 inventory locations',
-                      style: textTheme.subtitle1!.copyWith(
+                      style: textTheme.titleMedium!.copyWith(
                         fontWeight: FontWeight.w400,
                         color: Colors.black.withOpacity(0.5),
                       ),
